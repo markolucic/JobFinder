@@ -1,0 +1,26 @@
+<h1>All jobs</h1>
+
+<table class="table table-hover" >
+	<tr>
+		<th>Title</th>
+		<th>Description</th>
+		<th>Email</th>
+		<th>City</th>
+		<th>Salary</th>
+		<th>Experience</th>
+	</tr>
+
+	<% @jobs.each do |job| %>
+		<tr class=<%= job.experience ? "success" : "warning" %>>
+			<td><%= job.title %></td>
+			<td><%= job.description %></td>
+			<td><%= job.email %></td>
+			<td><%= job.city %></td>
+			<td><%= job.salary %> KM</td>
+			<td><%= job.experience ? "Yes" : "No" %></td>
+			<td><%= link_to 'Show', job_path(job), :class=>"btn btn-default" %></td>
+		</tr>
+	<% end %>
+</table>
+</br>
+<%= link_to 'New job',  new_job_path, :class=>"btn btn-primary" %>
