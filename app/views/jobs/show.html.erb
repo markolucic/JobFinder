@@ -19,6 +19,8 @@
 	<strong>Experience:</strong>
 	<%= @job.experience ? "Yes" : "No" %>
 </p>
-<%= link_to 'Delete Job', job_path(@job), method: :delete, data: {confirm: 'Are you sure?' }, class:"btn btn-danger"%>
+<%= link_to 'Delete', job_path(@job), method: :delete, data: {confirm: 'Are you sure?' }, class:"btn btn-danger"%>
+</br></br>
+<%= link_to 'Edit', edit_job_path %>
 </br></br>
 <%= link_to 'Back to Jobs', jobs_path %>
