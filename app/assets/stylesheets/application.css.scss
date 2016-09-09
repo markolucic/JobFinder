@@ -1,0 +1,30 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body { padding-top: 70px; }
+
+
+.hero-unit {
+	background: url('http://il3.picdn.net/shutterstock/videos/2392607/thumb/1.jpg');
+	background-size:cover;
+	height:300px;
+	opacity: .8;
+	h2 {
+		color:white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	i {
+		color:white;
+	}
+	.row{
+		padding-top: 80px;
+	}
+}
+
+.center{
+	display: block;
+	margin: 0 auto;
+}
